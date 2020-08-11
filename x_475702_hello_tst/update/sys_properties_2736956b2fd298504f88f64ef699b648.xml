@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Minimum number of days required between when a NeedIt request is created and the When needed date.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_475702_hello_tst.advancedNoticeDays</name>
+        <read_roles>x_475702_hello_tst.admin</read_roles>
+        <suffix>advancedNoticeDays</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-04 06:47:26</sys_created_on>
+        <sys_id>2736956b2fd298504f88f64ef699b648</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_475702_hello_tst.advancedNoticeDays</sys_name>
+        <sys_package display_value="Hello World" source="x_475702_hello_tst">6669ea542f1e90504f88f64ef699b672</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hello World">6669ea542f1e90504f88f64ef699b672</sys_scope>
+        <sys_update_name>sys_properties_2736956b2fd298504f88f64ef699b648</sys_update_name>
+        <sys_updated_by>oceanic.manager</sys_updated_by>
+        <sys_updated_on>2020-08-10 04:47:43</sys_updated_on>
+        <type>string</type>
+        <value>1</value>
+        <write_roles>x_475702_hello_tst.admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=2736956b2fd298504f88f64ef699b648"/>
+</record_update>

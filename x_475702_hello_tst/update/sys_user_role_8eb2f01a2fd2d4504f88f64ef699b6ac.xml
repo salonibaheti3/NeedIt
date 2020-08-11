@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>admin role for the NeedIt application</description>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_475702_hello_tst.admin</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>admin</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-31 06:59:13</sys_created_on>
+        <sys_id>8eb2f01a2fd2d4504f88f64ef699b6ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_475702_hello_tst.admin</sys_name>
+        <sys_package display_value="Hello World" source="x_475702_hello_tst">6669ea542f1e90504f88f64ef699b672</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hello World">6669ea542f1e90504f88f64ef699b672</sys_scope>
+        <sys_update_name>sys_user_role_8eb2f01a2fd2d4504f88f64ef699b6ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-31 06:59:13</sys_updated_on>
+    </sys_user_role>
+</record_update>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="c94122494a362312007f2ce5bd78768f" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_475702_hello_tst_needit</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>NeedIt When needed field date</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Retrieve the value of the Advanced notice days property from the NeedIt Properties table
+	var daysLeadTime;
+	
+	var niProperties = new GlideRecord('x_58872_needit_needit_properties');
+	niProperties.query();
+	
+	while (niProperties.next()) {
+		daysLeadTime = niProperties.getValue('advanced_notice_days');
+	}
+	
+	// Adjust When needed value with daysLeadTime for calculation
+	var whenNeeded = new GlideDateTime(current.u_when_needed.getDisplayValue());
+	whenNeeded.addDaysUTC(-daysLeadTime);
+	var comparisonDate = whenNeeded.getDate();
+	
+	// Instantiate the NeedItUtils class. Call the isDatePast method and pass
+	// the u_when_needed value.
+	
+	var niutils = new NeedItUtils();
+	var isPast = niutils.isDatePast(comparisonDate);
+	
+	// If the isDatePast method returns true, the date is in the past.
+	if(isPast == true){
+		gs.addErrorMessage("When needed date needs to be more than " + daysLeadTime + " from today.  Your request has not been saved to the database.");
+		current.setAbortAction(true);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-05 12:19:19</sys_created_on>
+        <sys_domain>c94122494a362312007f2ce5bd78768f</sys_domain>
+        <sys_domain_path>!!!/!!(/</sys_domain_path>
+        <sys_id>690ce77b2fd2d8504f88f64ef699b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIt When needed field date</sys_name>
+        <sys_overrides display_value="NeedIt When needed field date">484080f02f5ad0504f88f64ef699b684</sys_overrides>
+        <sys_package display_value="Hello World" source="x_475702_hello_tst">6669ea542f1e90504f88f64ef699b672</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hello World">6669ea542f1e90504f88f64ef699b672</sys_scope>
+        <sys_update_name>sys_script_690ce77b2fd2d8504f88f64ef699b6d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-05 12:19:19</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=690ce77b2fd2d8504f88f64ef699b6d5"/>
+</record_update>

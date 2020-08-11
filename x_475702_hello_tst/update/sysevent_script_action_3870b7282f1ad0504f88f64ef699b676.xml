@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>alm_transfer_order_line_subtask.escalati</event_name>
+        <name>Update Overdue NeedIt Task Priority</name>
+        <order>100</order>
+        <script><![CDATA[// Set the record priority to 1 - Critical
+current.priority = 1;
+// Update the record in the database
+current.update();]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-26 10:18:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3870b7282f1ad0504f88f64ef699b676</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Overdue NeedIt Task Priority</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hello World" source="x_475702_hello_tst">6669ea542f1e90504f88f64ef699b672</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hello World">6669ea542f1e90504f88f64ef699b672</sys_scope>
+        <sys_update_name>sysevent_script_action_3870b7282f1ad0504f88f64ef699b676</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-26 10:18:56</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

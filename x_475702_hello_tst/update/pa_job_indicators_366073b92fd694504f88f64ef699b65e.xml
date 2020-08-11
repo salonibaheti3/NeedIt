@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_job_indicators">
+    <pa_job_indicators action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <collect>1</collect>
+        <collect_indicator>true</collect_indicator>
+        <display>NeedIt Daily -  NeedIt: Due Monthly</display>
+        <indicator display_value=" NeedIt: Due Monthly">397567f12fd694504f88f64ef699b6ee</indicator>
+        <job display_value="NeedIt Daily">4e0037752fd694504f88f64ef699b677</job>
+        <sys_class_name>pa_job_indicators</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-30 07:30:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>366073b92fd694504f88f64ef699b65e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name> NeedIt: Due Monthly.NeedIt Daily</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hello World" source="x_475702_hello_tst">6669ea542f1e90504f88f64ef699b672</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hello World">6669ea542f1e90504f88f64ef699b672</sys_scope>
+        <sys_update_name>pa_job_indicators_366073b92fd694504f88f64ef699b65e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-30 07:30:39</sys_updated_on>
+    </pa_job_indicators>
+</record_update>

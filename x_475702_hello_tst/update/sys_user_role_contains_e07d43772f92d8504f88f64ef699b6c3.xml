@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains/>
+        <role display_value="itil" name="itil">282bf1fac6112285017366cb5f867469</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-05 10:05:43</sys_created_on>
+        <sys_id>e07d43772f92d8504f88f64ef699b6c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.itil</sys_name>
+        <sys_package display_value="Hello World" source="x_475702_hello_tst">6669ea542f1e90504f88f64ef699b672</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hello World">6669ea542f1e90504f88f64ef699b672</sys_scope>
+        <sys_update_name>sys_user_role_contains_e07d43772f92d8504f88f64ef699b6c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-05 10:05:43</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>
